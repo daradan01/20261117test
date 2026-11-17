@@ -6,6 +6,13 @@
   <title>조창목 | 전원테크 영업부 차장</title>
   <meta name="description" content="플라스틱 생활용품 제조·유통 전문 전원테크 영업부 차장 조창목입니다.">
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="조창목">
 </head>
 <body>
   <header class="nav">
@@ -68,6 +75,17 @@
   </main>
 
   <footer>© 2026 조창목 · 전원테크</footer>
+
+  <div id="install-banner" class="install-banner" role="dialog" aria-label="앱 설치 안내" hidden>
+    <img src="icons/icon-192.png" alt="" width="40" height="40">
+    <p id="install-text">앱을 설치하시겠어요?</p>
+    <div class="install-actions">
+      <button type="button" id="install-yes" class="btn small">설치</button>
+      <button type="button" id="install-no" class="btn small ghost">나중에</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script src="pwa.js"></script>
 </body>
 </html>
